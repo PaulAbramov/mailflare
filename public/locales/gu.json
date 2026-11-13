@@ -1881,6 +1881,8 @@
 	"booking.editor.confirmationDefault": "ડિફૉલ્ટ પુષ્ટિ",
 	"booking.editor.confirmationCustom": "કસ્ટમ પુષ્ટિ",
 	"booking.editor.confirmationUseDefault": "ડિફૉલ્ટ લખાણ સંપાદિત કરો",
+	"booking.editor.confirmationNotifyGuests": "બુક કરનાર ઉમેરેલા મહેમાનોને પણ ઇમેઇલ મોકલો",
+	"booking.editor.confirmationNotifyGuestsHint": "ડિફૉલ્ટ રૂપે બંધ, કારણ કે કોઈપણ આ સરનામાં લખી શકે છે. ચાલુ હોય ત્યારે વધુમાં વધુ {count} ઉમેરેલા મહેમાનોને બુક કરનારની નોંધ વિના પોતાની નકલ મળે છે.",
 	"booking.loading": "બુકિંગ લોડ થઈ રહ્યા છે",
 	"booking.loadingEllipsis": "બુકિંગ લોડ થઈ રહ્યા છે…",
 	"public.unavailable": "આ મીટિંગ ઉપલબ્ધ નથી.",

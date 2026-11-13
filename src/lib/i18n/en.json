@@ -1924,6 +1924,8 @@
 	"booking.editor.confirmationDefault": "Default confirmation",
 	"booking.editor.confirmationCustom": "Custom confirmation",
 	"booking.editor.confirmationUseDefault": "Edit the default text",
+	"booking.editor.confirmationNotifyGuests": "Also email the guests a booker adds",
+	"booking.editor.confirmationNotifyGuestsHint": "Off by default, because anyone can type these addresses. When on, up to {count} added guests get their own copy without the booker's notes.",
 	"booking.loading": "Loading bookings",
 	"booking.loadingEllipsis": "Loading bookings…",
 	"public.unavailable": "This meeting is unavailable.",

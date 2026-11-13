@@ -1881,6 +1881,8 @@
 	"booking.editor.confirmationDefault": "ਡਿਫੌਲਟ ਪੁਸ਼ਟੀ",
 	"booking.editor.confirmationCustom": "ਕਸਟਮ ਪੁਸ਼ਟੀ",
 	"booking.editor.confirmationUseDefault": "ਡਿਫੌਲਟ ਲਿਖਤ ਸੋਧੋ",
+	"booking.editor.confirmationNotifyGuests": "ਬੁੱਕ ਕਰਨ ਵਾਲੇ ਵੱਲੋਂ ਜੋੜੇ ਮਹਿਮਾਨਾਂ ਨੂੰ ਵੀ ਈਮੇਲ ਭੇਜੋ",
+	"booking.editor.confirmationNotifyGuestsHint": "ਡਿਫੌਲਟ ਤੌਰ 'ਤੇ ਬੰਦ, ਕਿਉਂਕਿ ਕੋਈ ਵੀ ਇਹ ਪਤੇ ਲਿਖ ਸਕਦਾ ਹੈ। ਚਾਲੂ ਹੋਣ 'ਤੇ ਵੱਧ ਤੋਂ ਵੱਧ {count} ਜੋੜੇ ਮਹਿਮਾਨਾਂ ਨੂੰ ਬੁੱਕ ਕਰਨ ਵਾਲੇ ਦੇ ਨੋਟਾਂ ਤੋਂ ਬਿਨਾਂ ਆਪਣੀ ਕਾਪੀ ਮਿਲਦੀ ਹੈ।",
 	"booking.loading": "ਬੁਕਿੰਗਾਂ ਲੋਡ ਹੋ ਰਹੀਆਂ ਹਨ",
 	"booking.loadingEllipsis": "ਬੁਕਿੰਗਾਂ ਲੋਡ ਹੋ ਰਹੀਆਂ ਹਨ…",
 	"public.unavailable": "ਇਹ ਮੀਟਿੰਗ ਉਪਲਬਧ ਨਹੀਂ ਹੈ।",

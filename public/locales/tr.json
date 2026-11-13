@@ -1828,6 +1828,8 @@
 	"booking.editor.confirmationDefault": "Varsayılan onay",
 	"booking.editor.confirmationCustom": "Özel onay",
 	"booking.editor.confirmationUseDefault": "Varsayılan metni düzenle",
+	"booking.editor.confirmationNotifyGuests": "Rezervasyonu yapanın eklediği konuklara da e-posta gönder",
+	"booking.editor.confirmationNotifyGuestsHint": "Herkes bu adresleri yazabildiği için varsayılan olarak kapalıdır. Açıkken en fazla {count} eklenen konuk, rezervasyonu yapanın notları olmadan kendi kopyasını alır.",
 	"booking.loading": "Randevular yükleniyor",
 	"booking.loadingEllipsis": "Randevular yükleniyor…",
 	"public.unavailable": "Bu toplantı kullanılamıyor.",

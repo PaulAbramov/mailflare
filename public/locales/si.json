@@ -1881,6 +1881,8 @@
 	"booking.editor.confirmationDefault": "පෙරනිමි තහවුරු කිරීම",
 	"booking.editor.confirmationCustom": "අභිරුචි තහවුරු කිරීම",
 	"booking.editor.confirmationUseDefault": "පෙරනිමි පෙළ සංස්කරණය කරන්න",
+	"booking.editor.confirmationNotifyGuests": "වෙන්කරන්නා එක් කළ අමුත්තන්ටද ඊමේල් කරන්න",
+	"booking.editor.confirmationNotifyGuestsHint": "ඕනෑම කෙනෙකුට මෙම ලිපින ටයිප් කළ හැකි නිසා පෙරනිමියෙන් අක්‍රියයි. සක්‍රිය කළ විට, එක් කළ අමුත්තන් {count} දක්වා වෙන්කරන්නාගේ සටහන් නොමැතිව තමන්ගේම පිටපතක් ලබයි.",
 	"booking.loading": "වෙන් කිරීම් පූරණය වෙමින්",
 	"booking.loadingEllipsis": "වෙන් කිරීම් පූරණය වෙමින්…",
 	"public.unavailable": "මෙම රැස්වීම ලබා ගත නොහැක.",

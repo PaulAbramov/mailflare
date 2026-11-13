@@ -1881,6 +1881,8 @@
 	"booking.editor.confirmationDefault": "Standardbestätigung",
 	"booking.editor.confirmationCustom": "Eigene Bestätigung",
 	"booking.editor.confirmationUseDefault": "Standardtext bearbeiten",
+	"booking.editor.confirmationNotifyGuests": "Auch die hinzugefügten Gäste per E-Mail benachrichtigen",
+	"booking.editor.confirmationNotifyGuestsHint": "Standardmäßig aus, weil jeder diese Adressen eintippen kann. Wenn an, erhalten bis zu {count} hinzugefügte Gäste eine eigene Kopie ohne die Notizen der buchenden Person.",
 	"booking.loading": "Buchungen werden geladen",
 	"booking.loadingEllipsis": "Buchungen werden geladen…",
 	"public.unavailable": "Diese Besprechung ist nicht verfügbar.",

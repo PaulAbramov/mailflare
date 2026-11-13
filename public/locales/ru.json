@@ -1901,6 +1901,8 @@
 	"booking.editor.confirmationDefault": "Подтверждение по умолчанию",
 	"booking.editor.confirmationCustom": "Своё подтверждение",
 	"booking.editor.confirmationUseDefault": "Изменить текст по умолчанию",
+	"booking.editor.confirmationNotifyGuests": "Отправлять письмо и гостям, которых добавил бронирующий",
+	"booking.editor.confirmationNotifyGuestsHint": "По умолчанию выключено, ведь эти адреса может ввести кто угодно. Если включить, до {count} добавленных гостей получат свою копию без заметок бронирующего.",
 	"booking.loading": "Загрузка бронирований",
 	"booking.loadingEllipsis": "Загрузка бронирований…",
 	"public.unavailable": "Эта встреча недоступна.",

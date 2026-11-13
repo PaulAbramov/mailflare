@@ -1901,6 +1901,8 @@
 	"booking.editor.confirmationDefault": "Domyślne potwierdzenie",
 	"booking.editor.confirmationCustom": "Własne potwierdzenie",
 	"booking.editor.confirmationUseDefault": "Edytuj domyślny tekst",
+	"booking.editor.confirmationNotifyGuests": "Wysyłaj e-mail także do gości dodanych przez rezerwującego",
+	"booking.editor.confirmationNotifyGuestsHint": "Domyślnie wyłączone, bo każdy może wpisać te adresy. Po włączeniu maksymalnie {count} dodanych gości dostaje własną kopię bez notatek rezerwującego.",
 	"booking.loading": "Ładowanie rezerwacji",
 	"booking.loadingEllipsis": "Ładowanie rezerwacji…",
 	"public.unavailable": "To spotkanie jest niedostępne.",

@@ -14,15 +14,19 @@ export type BookingConfirmationContent = {
 /** The names a confirmation can use as {placeholder}. */
 export const BOOKING_TEMPLATE_PLACEHOLDERS = ["guestName", "eventName", "hostName", "when", "location", "notes"] as const;
 export type BookingTemplatePlaceholder = (typeof BOOKING_TEMPLATE_PLACEHOLDERS)[number];
-export type BookingConfirmationTemplate = { subject: string; body: string };
+/** An event's own confirmation; notifyGuests is the host's opt-in to also email the guests a booker adds. */
+export type BookingConfirmationTemplate = { subject: string; body: string; notifyGuests?: boolean };
 
 export const CONFIRMATION_SUBJECT_MAX = 200;
 export const CONFIRMATION_BODY_MAX = 5000;
+/** At most this many added guests are emailed per booking, and only when the host opted in. */
+export const MAX_NOTIFIED_GUESTS = 5;
+/** How much of the booker's notes a confirmation quotes. */
+export const MAX_NOTES_IN_MAIL = 500;
 
 /**
- * The built-in confirmation, used for whichever of subject and body an event leaves empty. It deliberately leaves out
- * {notes}: the booking page is public, so the booker's free text must not appear in mail sent from the host's address
- * unless the host chose to put it there in a custom template.
+ * The built-in confirmation, used for whichever of subject and body an event leaves empty. {notes} is the booker's own
+ * free text, so it reaches mail only through neutralizeBookerText, and never in the copy for added guests.
  */
 export const DEFAULT_CONFIRMATION_SUBJECT = "Confirmed: {eventName} with {hostName}";
 export const DEFAULT_CONFIRMATION_BODY = [
@@ -32,6 +36,7 @@ export const DEFAULT_CONFIRMATION_BODY = [
 	"",
 	"When: {when}",
 	"Where: {location}",
+	"Notes: {notes}",
 	"",
 	"The attached calendar file adds the meeting to your calendar. Reply to this email if you need to change or cancel it.",
 ].join("\n");
@@ -82,6 +87,28 @@ export function renderBookingTemplate(template: string, values: Record<BookingTe
 		.join("\n");
 }
 
+const ADDRESS_PATTERN = /[^\s<>()"']+@[^\s<>()"']+/g;
+// Anything a mail client would turn into a link: a scheme, "www.", or a bare host name such as example.com/path.
+const LINK_PATTERN = /\b(?:[a-z][a-z0-9+.-]*:\/\/|www\.)\S+|\b[a-z0-9-]+(?:\.[a-z0-9-]+)*\.[a-z]{2,}(?:[/?#]\S*)?/gi;
+// Control characters other than newline and tab, plus the bidirectional overrides that can disguise text.
+const HIDDEN_CHARACTERS = /[\u0000-\u0008\u000b-\u001f\u007f‪-‮⁦-⁩]/g;
+
+/**
+ * Makes text typed on the public booking page safe to put in mail sent from the host's address. The page does not
+ * verify who books, so a stranger could otherwise use the confirmation to deliver links or addresses of their choice:
+ * links and email addresses are replaced, hidden characters dropped and the length capped. A name stays on one line.
+ */
+export function neutralizeBookerText(value: string, options: { singleLine?: boolean; maxLength: number }): string {
+	let text = value
+		.replace(/\r\n?/g, "\n")
+		.replace(HIDDEN_CHARACTERS, "")
+		.replace(ADDRESS_PATTERN, "[address removed]")
+		.replace(LINK_PATTERN, "[link removed]");
+	text = options.singleLine ? text.replace(/\s+/g, " ") : text.replace(/[ \t]+/g, " ").replace(/\n{3,}/g, "\n\n");
+	text = text.trim();
+	return text.length > options.maxLength ? `${text.slice(0, options.maxLength - 1).trimEnd()}…` : text;
+}
+
 /**
  * Reads the confirmation fields of a booking event request: undefined when the request leaves them out (keep what
  * is saved), null when they are invalid.
@@ -89,26 +116,30 @@ export function renderBookingTemplate(template: string, values: Record<BookingTe
 export function parseConfirmationTemplateInput(value: unknown): BookingConfirmationTemplate | null | undefined {
 	if (!value || typeof value !== "object") return undefined;
 	const input = value as Record<string, unknown>;
-	if (input.confirmationSubject === undefined && input.confirmationBody === undefined) return undefined;
+	if (input.confirmationSubject === undefined && input.confirmationBody === undefined && input.confirmationNotifyGuests === undefined) return undefined;
 	const subject = input.confirmationSubject ?? "";
 	const body = input.confirmationBody ?? "";
-	if (typeof subject !== "string" || typeof body !== "string") return null;
+	const notifyGuests = input.confirmationNotifyGuests ?? false;
+	if (typeof subject !== "string" || typeof body !== "string" || typeof notifyGuests !== "boolean") return null;
 	const cleanSubject = subject.replace(/[\r\n]+/g, " ").trim();
 	const cleanBody = body.replace(/\r\n?/g, "\n").trim();
 	if (cleanSubject.length > CONFIRMATION_SUBJECT_MAX || cleanBody.length > CONFIRMATION_BODY_MAX) return null;
-	return { subject: cleanSubject, body: cleanBody };
+	return { subject: cleanSubject, body: cleanBody, notifyGuests };
 }
 
-/** The guest confirmation: the event's own subject and body where set, the default template otherwise. */
-export function buildBookingConfirmation(content: BookingConfirmationContent, locale = FALLBACK_LOCALE, template?: BookingConfirmationTemplate | null): { subject: string; text: string } {
-	// The booker is anonymous: keep their name on one line so it cannot add lines to the message or subject.
+/**
+ * The guest confirmation: the event's own subject and body where set, the default template otherwise. The copy for
+ * guests the booker added passes includeNotes: false, so the booker's free text only ever goes back to the booker.
+ */
+export function buildBookingConfirmation(content: BookingConfirmationContent, locale = FALLBACK_LOCALE, template?: BookingConfirmationTemplate | null, options: { includeNotes?: boolean } = {}): { subject: string; text: string } {
+	// The booker is anonymous: their name stays on one line and, like their notes, carries no links or addresses.
 	const values = {
-		guestName: content.guestName.replace(/\s+/g, " ").trim(),
+		guestName: neutralizeBookerText(content.guestName, { singleLine: true, maxLength: 120 }),
 		eventName: content.eventName,
 		hostName: content.hostName,
 		when: formatBookingWhen(content.startsAt, content.endsAt, content.timeZone, locale),
 		location: content.location,
-		notes: content.notes,
+		notes: options.includeNotes === false ? "" : neutralizeBookerText(content.notes, { maxLength: MAX_NOTES_IN_MAIL }),
 	};
 	// A guest's name can go into the subject, so keep it on one header line whatever they typed.
 	const oneLine = (value: string) => value.replace(/[\r\n]+/g, " ").trim();

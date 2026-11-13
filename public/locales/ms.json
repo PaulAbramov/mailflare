@@ -1880,6 +1880,8 @@
 	"booking.editor.confirmationDefault": "Pengesahan lalai",
 	"booking.editor.confirmationCustom": "Pengesahan tersuai",
 	"booking.editor.confirmationUseDefault": "Edit teks lalai",
+	"booking.editor.confirmationNotifyGuests": "E-mel juga tetamu yang ditambah oleh penempah",
+	"booking.editor.confirmationNotifyGuestsHint": "Mati secara lalai, kerana sesiapa sahaja boleh menaip alamat ini. Apabila hidup, sehingga {count} tetamu yang ditambah menerima salinan sendiri tanpa nota penempah.",
 	"booking.loading": "Memuatkan tempahan",
 	"booking.loadingEllipsis": "Memuatkan tempahan…",
 	"public.unavailable": "Mesyuarat ini tidak tersedia.",

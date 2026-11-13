@@ -1891,6 +1891,8 @@
 	"booking.editor.confirmationDefault": "Conferma predefinita",
 	"booking.editor.confirmationCustom": "Conferma personalizzata",
 	"booking.editor.confirmationUseDefault": "Modifica il testo predefinito",
+	"booking.editor.confirmationNotifyGuests": "Invia un’email anche agli ospiti aggiunti da chi prenota",
+	"booking.editor.confirmationNotifyGuestsHint": "Disattivato per impostazione predefinita, perché chiunque può inserire questi indirizzi. Se attivo, fino a {count} ospiti aggiunti ricevono una propria copia senza le note di chi prenota.",
 	"booking.loading": "Caricamento delle prenotazioni",
 	"booking.loadingEllipsis": "Caricamento delle prenotazioni…",
 	"public.unavailable": "Questo incontro non è disponibile.",

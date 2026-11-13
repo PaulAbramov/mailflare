@@ -1881,6 +1881,8 @@
 	"booking.editor.confirmationDefault": "Tabbatarwa ta asali",
 	"booking.editor.confirmationCustom": "Tabbatarwa ta musamman",
 	"booking.editor.confirmationUseDefault": "Gyara rubutun asali",
+	"booking.editor.confirmationNotifyGuests": "Aika imel ga baƙin da mai rajista ya ƙara",
+	"booking.editor.confirmationNotifyGuestsHint": "A kashe yake ta asali, saboda kowa zai iya rubuta waɗannan adiresoshin. Idan a kunne, har baƙi {count} da aka ƙara za su sami kwafinsu ba tare da bayanan mai rajista ba.",
 	"booking.loading": "Ana loda ajiyar wuri",
 	"booking.loadingEllipsis": "Ana loda ajiyar wuri…",
 	"public.unavailable": "Wannan taro ba ya samuwa.",

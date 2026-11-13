@@ -1879,6 +1879,8 @@
 	"booking.editor.confirmationDefault": "ڈیفالٹ تصدیق",
 	"booking.editor.confirmationCustom": "حسب ضرورت تصدیق",
 	"booking.editor.confirmationUseDefault": "ڈیفالٹ متن میں ترمیم کریں",
+	"booking.editor.confirmationNotifyGuests": "بکنگ کرنے والے کے شامل کردہ مہمانوں کو بھی ای میل بھیجیں",
+	"booking.editor.confirmationNotifyGuestsHint": "بطور ڈیفالٹ بند، کیونکہ کوئی بھی یہ پتے لکھ سکتا ہے۔ آن ہونے پر زیادہ سے زیادہ {count} شامل کردہ مہمانوں کو بکنگ کرنے والے کے نوٹس کے بغیر اپنی کاپی ملتی ہے۔",
 	"booking.loading": "بکنگز لوڈ ہو رہی ہیں",
 	"booking.loadingEllipsis": "بکنگز لوڈ ہو رہی ہیں…",
 	"public.unavailable": "یہ ملاقات دستیاب نہیں ہے۔",

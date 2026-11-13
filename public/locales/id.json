@@ -1871,6 +1871,8 @@
 	"booking.editor.confirmationDefault": "Konfirmasi bawaan",
 	"booking.editor.confirmationCustom": "Konfirmasi khusus",
 	"booking.editor.confirmationUseDefault": "Edit teks bawaan",
+	"booking.editor.confirmationNotifyGuests": "Kirim email juga ke tamu yang ditambahkan pemesan",
+	"booking.editor.confirmationNotifyGuestsHint": "Nonaktif secara bawaan, karena siapa pun bisa mengetik alamat ini. Jika aktif, hingga {count} tamu yang ditambahkan menerima salinan sendiri tanpa catatan pemesan.",
 	"booking.loading": "Memuat pemesanan",
 	"booking.loadingEllipsis": "Memuat pemesanan…",
 	"public.unavailable": "Pertemuan ini tidak tersedia.",

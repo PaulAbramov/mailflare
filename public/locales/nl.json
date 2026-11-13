@@ -1881,6 +1881,8 @@
 	"booking.editor.confirmationDefault": "Standaardbevestiging",
 	"booking.editor.confirmationCustom": "Eigen bevestiging",
 	"booking.editor.confirmationUseDefault": "Standaardtekst bewerken",
+	"booking.editor.confirmationNotifyGuests": "Ook de gasten mailen die iemand bij het boeken toevoegt",
+	"booking.editor.confirmationNotifyGuestsHint": "Standaard uit, omdat iedereen deze adressen kan invullen. Indien aan krijgen maximaal {count} toegevoegde gasten een eigen kopie zonder de notities van de boeker.",
 	"booking.loading": "Boekingen laden",
 	"booking.loadingEllipsis": "Boekingen laden…",
 	"public.unavailable": "Deze vergadering is niet beschikbaar.",

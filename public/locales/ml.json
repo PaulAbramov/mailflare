@@ -1881,6 +1881,8 @@
 	"booking.editor.confirmationDefault": "സ്ഥിരസ്ഥിതി സ്ഥിരീകരണം",
 	"booking.editor.confirmationCustom": "ഇഷ്ടാനുസൃത സ്ഥിരീകരണം",
 	"booking.editor.confirmationUseDefault": "സ്ഥിരസ്ഥിതി വാചകം എഡിറ്റ് ചെയ്യുക",
+	"booking.editor.confirmationNotifyGuests": "ബുക്ക് ചെയ്യുന്നയാൾ ചേർത്ത അതിഥികൾക്കും ഇമെയിൽ അയയ്ക്കുക",
+	"booking.editor.confirmationNotifyGuestsHint": "ആർക്കും ഈ വിലാസങ്ങൾ ടൈപ്പ് ചെയ്യാനാകുന്നതിനാൽ സ്ഥിരസ്ഥിതിയായി ഓഫാണ്. ഓണാക്കിയാൽ ചേർത്ത പരമാവധി {count} അതിഥികൾക്ക് ബുക്ക് ചെയ്തയാളുടെ കുറിപ്പുകളില്ലാത്ത സ്വന്തം പകർപ്പ് ലഭിക്കും.",
 	"booking.loading": "ബുക്കിംഗുകൾ ലോഡ് ചെയ്യുന്നു",
 	"booking.loadingEllipsis": "ബുക്കിംഗുകൾ ലോഡ് ചെയ്യുന്നു…",
 	"public.unavailable": "ഈ മീറ്റിംഗ് ലഭ്യമല്ല.",

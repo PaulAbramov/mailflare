@@ -19,6 +19,7 @@ export type BookingEvent = {
 	/** The event's own guest confirmation; empty uses the built-in text. */
 	confirmationSubject?: string;
 	confirmationBody?: string;
+	confirmationNotifyGuests?: boolean;
 	isTemplate?: true;
 };
 
@@ -38,6 +39,7 @@ export type BookingForm = {
 	enabled: boolean;
 	confirmationSubject: string;
 	confirmationBody: string;
+	confirmationNotifyGuests: boolean;
 };
 
 export type BookingHost = { id: string; name: string; email: string; hasAvatar?: boolean };

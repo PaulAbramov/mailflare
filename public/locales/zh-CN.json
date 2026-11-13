@@ -1871,6 +1871,8 @@
 	"booking.editor.confirmationDefault": "默认确认",
 	"booking.editor.confirmationCustom": "自定义确认",
 	"booking.editor.confirmationUseDefault": "编辑默认文本",
+	"booking.editor.confirmationNotifyGuests": "同时向预约者添加的访客发送邮件",
+	"booking.editor.confirmationNotifyGuestsHint": "默认关闭，因为任何人都能填写这些地址。开启后，最多 {count} 位被添加的访客会收到不含预约者备注的单独副本。",
 	"booking.loading": "正在加载预约",
 	"booking.loadingEllipsis": "正在加载预约…",
 	"public.unavailable": "此会议不可用。",

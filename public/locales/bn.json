@@ -1879,6 +1879,8 @@
 	"booking.editor.confirmationDefault": "ডিফল্ট নিশ্চিতকরণ",
 	"booking.editor.confirmationCustom": "নিজস্ব নিশ্চিতকরণ",
 	"booking.editor.confirmationUseDefault": "ডিফল্ট লেখা সম্পাদনা করুন",
+	"booking.editor.confirmationNotifyGuests": "বুকারের যোগ করা অতিথিদেরও ইমেল পাঠান",
+	"booking.editor.confirmationNotifyGuestsHint": "ডিফল্টভাবে বন্ধ, কারণ যে কেউ এই ঠিকানাগুলো লিখতে পারে। চালু থাকলে সর্বোচ্চ {count} জন যোগ করা অতিথি বুকারের নোট ছাড়া নিজস্ব কপি পান।",
 	"booking.loading": "বুকিং লোড হচ্ছে",
 	"booking.loadingEllipsis": "বুকিং লোড হচ্ছে…",
 	"public.unavailable": "এই মিটিং উপলব্ধ নেই।",
