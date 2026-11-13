@@ -700,6 +700,8 @@ export const bookingConfirmationTemplates = sqliteTable("booking_confirmation_te
 	subject: text("subject").notNull().default(""),
 	body: text("body").notNull().default(""),
 	updatedAt: timestamp("updated_at").notNull().$defaultFn(() => new Date()),
+	// The host's opt-in to email the guests a booker adds (migration 0087). Off by default: those addresses are unverified.
+	notifyGuests: bool("notify_guests").notNull().default(false),
 });
 
 export const routingRules = sqliteTable(

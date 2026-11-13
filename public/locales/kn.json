@@ -1881,6 +1881,8 @@
 	"booking.editor.confirmationDefault": "ಡೀಫಾಲ್ಟ್ ದೃಢೀಕರಣ",
 	"booking.editor.confirmationCustom": "ಕಸ್ಟಮ್ ದೃಢೀಕರಣ",
 	"booking.editor.confirmationUseDefault": "ಡೀಫಾಲ್ಟ್ ಪಠ್ಯವನ್ನು ಸಂಪಾದಿಸಿ",
+	"booking.editor.confirmationNotifyGuests": "ಬುಕ್ ಮಾಡುವವರು ಸೇರಿಸಿದ ಅತಿಥಿಗಳಿಗೂ ಇಮೇಲ್ ಕಳುಹಿಸಿ",
+	"booking.editor.confirmationNotifyGuestsHint": "ಡೀಫಾಲ್ಟ್ ಆಗಿ ಆಫ್, ಏಕೆಂದರೆ ಯಾರಾದರೂ ಈ ವಿಳಾಸಗಳನ್ನು ಟೈಪ್ ಮಾಡಬಹುದು. ಆನ್ ಆಗಿದ್ದಾಗ ಗರಿಷ್ಠ {count} ಸೇರಿಸಿದ ಅತಿಥಿಗಳು ಬುಕ್ ಮಾಡುವವರ ಟಿಪ್ಪಣಿಗಳಿಲ್ಲದ ತಮ್ಮದೇ ಪ್ರತಿಯನ್ನು ಪಡೆಯುತ್ತಾರೆ.",
 	"booking.loading": "ಬುಕಿಂಗ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ",
 	"booking.loadingEllipsis": "ಬುಕಿಂಗ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ…",
 	"public.unavailable": "ಈ ಸಭೆ ಲಭ್ಯವಿಲ್ಲ.",

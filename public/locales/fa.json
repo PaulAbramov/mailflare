@@ -1881,6 +1881,8 @@
 	"booking.editor.confirmationDefault": "تأیید پیش‌فرض",
 	"booking.editor.confirmationCustom": "تأیید سفارشی",
 	"booking.editor.confirmationUseDefault": "ویرایش متن پیش‌فرض",
+	"booking.editor.confirmationNotifyGuests": "به مهمانانی که رزروکننده اضافه می‌کند هم ایمیل شود",
+	"booking.editor.confirmationNotifyGuestsHint": "به‌طور پیش‌فرض خاموش است، چون هر کسی می‌تواند این نشانی‌ها را وارد کند. اگر روشن باشد، حداکثر {count} مهمان اضافه‌شده نسخه‌ای جداگانه بدون یادداشت‌های رزروکننده دریافت می‌کنند.",
 	"booking.loading": "در حال بارگذاری رزروها",
 	"booking.loadingEllipsis": "در حال بارگذاری رزروها…",
 	"public.unavailable": "این جلسه در دسترس نیست.",

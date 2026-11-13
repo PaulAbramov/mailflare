@@ -1901,6 +1901,8 @@
 	"booking.editor.confirmationDefault": "Типове підтвердження",
 	"booking.editor.confirmationCustom": "Власне підтвердження",
 	"booking.editor.confirmationUseDefault": "Змінити типовий текст",
+	"booking.editor.confirmationNotifyGuests": "Надсилати лист і гостям, яких додав той, хто бронює",
+	"booking.editor.confirmationNotifyGuestsHint": "Типово вимкнено, адже ці адреси може ввести будь-хто. Якщо ввімкнути, до {count} доданих гостей отримають власну копію без нотаток того, хто бронює.",
 	"booking.loading": "Завантаження бронювань",
 	"booking.loadingEllipsis": "Завантаження бронювань…",
 	"public.unavailable": "Ця зустріч недоступна.",

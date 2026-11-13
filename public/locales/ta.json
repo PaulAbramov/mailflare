@@ -1881,6 +1881,8 @@
 	"booking.editor.confirmationDefault": "இயல்புநிலை உறுதிப்படுத்தல்",
 	"booking.editor.confirmationCustom": "தனிப்பயன் உறுதிப்படுத்தல்",
 	"booking.editor.confirmationUseDefault": "இயல்புநிலை உரையைத் திருத்து",
+	"booking.editor.confirmationNotifyGuests": "முன்பதிவு செய்பவர் சேர்த்த விருந்தினர்களுக்கும் மின்னஞ்சல் அனுப்பு",
+	"booking.editor.confirmationNotifyGuestsHint": "யார் வேண்டுமானாலும் இந்த முகவரிகளைத் தட்டச்சு செய்யலாம் என்பதால் இயல்பாக முடக்கப்பட்டுள்ளது. இயக்கினால், சேர்க்கப்பட்ட அதிகபட்சம் {count} விருந்தினர்கள் முன்பதிவு செய்தவரின் குறிப்புகள் இல்லாத தனி நகலைப் பெறுவர்.",
 	"booking.loading": "முன்பதிவுகள் ஏற்றப்படுகின்றன",
 	"booking.loadingEllipsis": "முன்பதிவுகள் ஏற்றப்படுகின்றன…",
 	"public.unavailable": "இந்தச் சந்திப்பு கிடைக்கவில்லை.",

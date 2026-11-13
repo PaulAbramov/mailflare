@@ -1891,6 +1891,8 @@
 	"booking.editor.confirmationDefault": "Confirmación predeterminada",
 	"booking.editor.confirmationCustom": "Confirmación personalizada",
 	"booking.editor.confirmationUseDefault": "Editar el texto predeterminado",
+	"booking.editor.confirmationNotifyGuests": "Enviar también un correo a los invitados que añade quien reserva",
+	"booking.editor.confirmationNotifyGuestsHint": "Desactivado por defecto, porque cualquiera puede escribir estas direcciones. Si está activado, hasta {count} invitados añadidos reciben su propia copia sin las notas de quien reserva.",
 	"booking.loading": "Cargando reservas",
 	"booking.loadingEllipsis": "Cargando reservas…",
 	"public.unavailable": "Esta reunión no está disponible.",

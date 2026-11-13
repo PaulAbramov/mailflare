@@ -1879,6 +1879,8 @@
 	"booking.editor.confirmationDefault": "డిఫాల్ట్ నిర్ధారణ",
 	"booking.editor.confirmationCustom": "అనుకూల నిర్ధారణ",
 	"booking.editor.confirmationUseDefault": "డిఫాల్ట్ పాఠాన్ని సవరించండి",
+	"booking.editor.confirmationNotifyGuests": "బుక్ చేసినవారు జోడించిన అతిథులకు కూడా ఇమెయిల్ పంపండి",
+	"booking.editor.confirmationNotifyGuestsHint": "ఎవరైనా ఈ చిరునామాలను టైప్ చేయవచ్చు కాబట్టి డిఫాల్ట్‌గా ఆఫ్. ఆన్ చేస్తే, జోడించిన గరిష్ఠంగా {count} అతిథులకు బుక్ చేసినవారి గమనికలు లేని స్వంత కాపీ వస్తుంది.",
 	"booking.loading": "బుకింగ్‌లు లోడ్ అవుతున్నాయి",
 	"booking.loadingEllipsis": "బుకింగ్‌లు లోడ్ అవుతున్నాయి…",
 	"public.unavailable": "ఈ సమావేశం అందుబాటులో లేదు.",

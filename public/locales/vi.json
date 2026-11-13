@@ -1871,6 +1871,8 @@
 	"booking.editor.confirmationDefault": "Xác nhận mặc định",
 	"booking.editor.confirmationCustom": "Xác nhận tùy chỉnh",
 	"booking.editor.confirmationUseDefault": "Sửa văn bản mặc định",
+	"booking.editor.confirmationNotifyGuests": "Gửi email cho cả khách mà người đặt lịch thêm vào",
+	"booking.editor.confirmationNotifyGuestsHint": "Tắt theo mặc định vì ai cũng có thể nhập các địa chỉ này. Khi bật, tối đa {count} khách được thêm nhận bản riêng, không kèm ghi chú của người đặt lịch.",
 	"booking.loading": "Đang tải các lịch hẹn",
 	"booking.loadingEllipsis": "Đang tải các lịch hẹn…",
 	"public.unavailable": "Cuộc họp này không khả dụng.",

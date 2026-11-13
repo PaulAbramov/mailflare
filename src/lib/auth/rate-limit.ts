@@ -33,6 +33,20 @@ export async function allowBookingAttempt(env: CloudflareEnv, request: Request):
 	}
 }
 
+/**
+ * One email to a guest the booker added, charged per guest to the same client's budget, so adding guests cannot
+ * multiply the mail one client sends. Unlike the booking itself it fails closed: these addresses are third parties.
+ */
+export async function allowBookingGuestMail(env: CloudflareEnv, request: Request): Promise<boolean> {
+	if (!env.LOGIN_RATE_LIMIT) return true;
+	try {
+		return (await env.LOGIN_RATE_LIMIT.limit({ key: `booking-guest:${clientRateLimitKey(request)}` })).success;
+	} catch (error) {
+		console.warn("Booking guest mail rate limiter unavailable", error);
+		return false;
+	}
+}
+
 export async function allowLoginAttempt(env: CloudflareEnv, request: Request): Promise<boolean> {
 	if (!env.LOGIN_RATE_LIMIT) return true;
 	try {

@@ -1881,6 +1881,8 @@
 	"booking.editor.confirmationDefault": "Uthibitisho chaguomsingi",
 	"booking.editor.confirmationCustom": "Uthibitisho maalum",
 	"booking.editor.confirmationUseDefault": "Hariri maandishi chaguomsingi",
+	"booking.editor.confirmationNotifyGuests": "Tuma barua pepe pia kwa wageni walioongezwa na anayeweka nafasi",
+	"booking.editor.confirmationNotifyGuestsHint": "Imezimwa kwa chaguomsingi, kwa sababu mtu yeyote anaweza kuandika anwani hizi. Ikiwashwa, hadi wageni {count} walioongezwa hupokea nakala yao bila maelezo ya anayeweka nafasi.",
 	"booking.loading": "Inapakia miadi",
 	"booking.loadingEllipsis": "Inapakia miadi…",
 	"public.unavailable": "Mkutano huu haupatikani.",

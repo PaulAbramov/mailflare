@@ -1921,6 +1921,8 @@
 	"booking.editor.confirmationDefault": "التأكيد الافتراضي",
 	"booking.editor.confirmationCustom": "تأكيد مخصص",
 	"booking.editor.confirmationUseDefault": "تعديل النص الافتراضي",
+	"booking.editor.confirmationNotifyGuests": "إرسال بريد أيضًا إلى الضيوف الذين يضيفهم صاحب الحجز",
+	"booking.editor.confirmationNotifyGuestsHint": "معطّل افتراضيًا لأن أي شخص يمكنه كتابة هذه العناوين. عند التفعيل يتلقى حتى {count} من الضيوف المضافين نسخة خاصة بهم بدون ملاحظات صاحب الحجز.",
 	"booking.loading": "جارٍ تحميل الحجوزات",
 	"booking.loadingEllipsis": "جارٍ تحميل الحجوزات…",
 	"public.unavailable": "هذا الاجتماع غير متاح.",

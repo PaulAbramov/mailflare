@@ -1880,6 +1880,8 @@
 	"booking.editor.confirmationDefault": "การยืนยันเริ่มต้น",
 	"booking.editor.confirmationCustom": "การยืนยันแบบกำหนดเอง",
 	"booking.editor.confirmationUseDefault": "แก้ไขข้อความเริ่มต้น",
+	"booking.editor.confirmationNotifyGuests": "ส่งอีเมลถึงผู้เข้าร่วมที่ผู้จองเพิ่มด้วย",
+	"booking.editor.confirmationNotifyGuestsHint": "ปิดไว้โดยค่าเริ่มต้น เพราะใครก็พิมพ์ที่อยู่เหล่านี้ได้ เมื่อเปิด ผู้เข้าร่วมที่ถูกเพิ่มสูงสุด {count} คนจะได้รับสำเนาของตนเองโดยไม่มีบันทึกของผู้จอง",
 	"booking.loading": "กำลังโหลดการจอง",
 	"booking.loadingEllipsis": "กำลังโหลดการจอง…",
 	"public.unavailable": "การประชุมนี้ไม่พร้อมใช้งาน",
